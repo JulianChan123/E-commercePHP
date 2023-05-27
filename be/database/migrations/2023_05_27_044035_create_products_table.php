@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string(column: 'brand');
             $table->string(column: 'desc');
             $table->string(column: 'price');
+            $table->string(column: 'image')->default('0');
+            $table->string(column: 'imgpath')->default('0');
             $table->timestamps();
         });
     }
