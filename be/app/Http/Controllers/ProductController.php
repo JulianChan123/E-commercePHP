@@ -95,4 +95,5 @@ class ProductController extends Controller{
         })->select('products.*')->get();
         return response()->json(['products'=>$products]);
     }
+    
 }
