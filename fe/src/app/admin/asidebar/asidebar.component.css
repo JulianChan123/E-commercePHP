@@ -1,0 +1,62 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #F8E0E6;
+  transition: all 0.3s;
+  z-index: 1; /* Añadimos una propiedad de z-index para asegurar que la sidebar se muestre por encima del contenido */
+  overflow-y: auto;
+}
+
+.sidebar {
+  padding: 20px;
+  list-style: none; /* Quita las viñetas de la lista */
+}
+
+
+
+.sidebar-menu li a {
+  color: #555; /* Color de texto gris oscuro */
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #F08080; /* Color de fondo rosa más oscuro al pasar el cursor */
+  color: #FFF; /* Color de texto blanco al pasar el cursor */
+}
+
+.sidebar-menu li.active a {
+  background-color: #F08080; /* Color de fondo rosa más oscuro para elementos activos */
+  color: #FFF; /* Color de texto blanco para elementos activos */
+}
+
+.user-panel {
+  padding: 20px;
+  background-color: #FFC0CB; /* Color de fondo rosa claro */
+  color: #FFF; /* Color de texto blanco */
+}
+
+.user-panel img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-panel p {
+  margin-bottom: 5px;
+}
+
+.user-panel a {
+  color: #888; /* Color de texto gris claro */
+  text-decoration: none;
+}
+
+.user-panel a:hover {
+  color: #FFF; /* Color de texto blanco al pasar el cursor */
+}
