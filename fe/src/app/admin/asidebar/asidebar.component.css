@@ -6,19 +6,17 @@
   width: 250px;
   background-color: #F8E0E6;
   transition: all 0.3s;
-  z-index: 1; /* Añadimos una propiedad de z-index para asegurar que la sidebar se muestre por encima del contenido */
+  z-index: 1; 
   overflow-y: auto;
 }
 
 .sidebar {
   padding: 20px;
-  list-style: none; /* Quita las viñetas de la lista */
+  list-style: none; 
 }
 
-
-
 .sidebar-menu li a {
-  color: #555; /* Color de texto gris oscuro */
+  color: #555; 
   display: block;
   padding: 10px 15px;
   text-decoration: none;
@@ -26,19 +24,19 @@
 }
 
 .sidebar-menu li a:hover {
-  background-color: #F08080; /* Color de fondo rosa más oscuro al pasar el cursor */
-  color: #FFF; /* Color de texto blanco al pasar el cursor */
+  background-color: #F08080; 
+  color: #FFF; 
 }
 
 .sidebar-menu li.active a {
-  background-color: #F08080; /* Color de fondo rosa más oscuro para elementos activos */
-  color: #FFF; /* Color de texto blanco para elementos activos */
+  background-color: #F08080; 
+  color: #FFF; 
 }
 
 .user-panel {
   padding: 20px;
-  background-color: #FFC0CB; /* Color de fondo rosa claro */
-  color: #FFF; /* Color de texto blanco */
+  background-color: #FFC0CB; 
+  color: #FFF; 
 }
 
 .user-panel img {
@@ -53,10 +51,10 @@
 }
 
 .user-panel a {
-  color: #888; /* Color de texto gris claro */
+  color: #888; 
   text-decoration: none;
 }
 
 .user-panel a:hover {
-  color: #FFF; /* Color de texto blanco al pasar el cursor */
+  color: #FFF; 
 }

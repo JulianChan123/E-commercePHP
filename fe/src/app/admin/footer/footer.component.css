@@ -1,12 +1,12 @@
 .footer {
     height: 60px;
-    background-color: #F08080; /* Color de fondo rosa más oscuro */
+    background-color: #F08080; 
     padding: 10px;
     text-align: center;
   }
   
   .footer-inner {
-    color: #FFF; /* Color de texto blanco */
+    color: #FFF; 
   }
   
   .footer-inner p {

@@ -10,7 +10,7 @@ export class ProductService {
   AllProducts = new BehaviorSubject<productModel[]>([]);
 
   constructor(private http:HttpClient) { 
-
+    this.getFromDb("");
   }
 
   private baseUrl="http://localhost:8000/api/";

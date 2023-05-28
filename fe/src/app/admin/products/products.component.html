@@ -1,1 +1,23 @@
-<p>products works!</p>
+
+<a href="otra-pagina.html" class="boton">Añadir producto</a>
+
+<table border="1">
+    <tbody>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Brand</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let p of products">
+            <td><img src="{{p.imgpath}}" style="width: 50px; height: 50px;"></td>
+            <td>{{p.name}}</td>
+            <td>{{p.category}}</td>
+            <td>{{p.brand}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.desc}}</td>
+        </tr>
+    </tbody>
+</table>

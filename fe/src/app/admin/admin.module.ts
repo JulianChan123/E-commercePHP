@@ -7,6 +7,7 @@ import { ProductsComponent } from './products/products.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { AsidebarComponent } from './asidebar/asidebar.component';
+import { CreateProductsComponent } from './create-products/create-products.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AsidebarComponent } from './asidebar/asidebar.component';
     ProductsComponent,
     TopbarComponent,
     FooterComponent,
-    AsidebarComponent
+    AsidebarComponent,
+    CreateProductsComponent,
   ],
   imports: [
     CommonModule,
