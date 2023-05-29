@@ -1,9 +1,8 @@
-export class productModel{
-    name:any="";
-    category:any="";
-    brand:any="";
-    desc:any="";
-    price:any="";
-    image:any="";
-    imgpath:any="";
+export interface ProductModel {
+  id: number
+  name: string;
+  category: string;
+  brand: string;
+  desc: string;
+  price: number;
 }

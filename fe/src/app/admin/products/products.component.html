@@ -1,23 +1,44 @@
-
-<a href="otra-pagina.html" class="boton">Añadir producto</a>
-
+<h2>Products</h2>
 <table border="1">
-    <tbody>
-        <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Brand</th>
-            <th>Description</th>
-            <th>Price</th>
-        </tr>
-        <tr *ngFor="let p of products">
-            <td><img src="{{p.imgpath}}" style="width: 50px; height: 50px;"></td>
-            <td>{{p.name}}</td>
-            <td>{{p.category}}</td>
-            <td>{{p.brand}}</td>
-            <td>{{p.price}}</td>
-            <td>{{p.desc}}</td>
-        </tr>
-    </tbody>
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Brand</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let p of products">
+      <td>{{ p.name }}</td>
+      <td>{{ p.category }}</td>
+      <td>{{ p.brand }}</td>
+      <td>{{ p.desc }}</td>
+      <td>{{ p.price }}</td>
+      <td>
+        <button (click)="deleteProduct(p.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
+<h2>Create Product</h2>
+
+<form (submit)="addProduct()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="newProduct.name" required>
+  
+  <label for="category">Category:</label>
+  <input type="text" id="category" name="category" [(ngModel)]="newProduct.category" required>
+  
+  <label for="brand">Brand:</label>
+  <input type="text" id="brand" name="brand" [(ngModel)]="newProduct.brand" required>
+  
+  <label for="desc">Description:</label>
+  <textarea id="desc" name="desc" [(ngModel)]="newProduct.desc" required></textarea>
+  
+  <label for="price">Price:</label>
+  <input type="number" id="price" name="price" step="0.01" [(ngModel)]="newProduct.price" required>
+  
+  <button type="submit">Submit</button>
+</form>
