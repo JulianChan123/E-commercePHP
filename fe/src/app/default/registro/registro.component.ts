@@ -32,11 +32,11 @@ export class RegistroComponent {
 
     this.registroService.registrarUser(userData).subscribe(
         response => {
+          window.location.href = 'http://localhost:4200/login'
           console.log('Registro exitoso');
-          
         },
         error => {
-          console.error('Error en el registro', error);
+          console.error('No se pudo registrar el usuario', error);
         }
       );
   }
