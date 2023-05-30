@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultComponent } from './default.component';
-import { DproductsComponent } from './dproducts/dproducts.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path:'', component:DefaultComponent,
-  children:[
-    {path: 'products', component:DproductsComponent}
-  ]}
+  { path: 'login', component: LoginComponent },
+  // Agrega otras rutas necesarias para el módulo DefaultModule aquí
 ];
 
 @NgModule({

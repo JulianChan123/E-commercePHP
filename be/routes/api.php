@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\julian;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,4 +27,4 @@ Route::any('get', ProductController::class.'@get');
 
 //User routes
 Route::any('register', UserController::class.'@register');
-Route::any('login', UserController::class.'@login');
+Route::any('login', julian::class.'@login');

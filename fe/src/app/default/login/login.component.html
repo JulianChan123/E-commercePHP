@@ -1,0 +1,25 @@
+<body>
+  <div class="title">
+    <h2>Login</h2>
+  </div>
+  
+  <div class="container">
+    <img src="assets/Logo.png" alt="" class="logo">
+    <section class="form">
+      <form (submit)="login()">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" [(ngModel)]="username" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required>
+        </div>
+        <div class="form-footer">
+          <a routerLink="/registro">Regístrate</a>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
