@@ -26,5 +26,5 @@ Route::any('delete', ProductController::class.'@delete');
 Route::any('get', ProductController::class.'@get');
 
 //User routes
-Route::any('register', UserController::class.'@register');
+Route::any('register', julian::class.'@register');
 Route::any('login', julian::class.'@login');

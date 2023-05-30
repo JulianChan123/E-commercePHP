@@ -1,0 +1,63 @@
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #DD7373;
+    padding: 0% 50% 0% 10%;
+    border-radius: 100px;
+    font-size: 50px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 25px); /* Half the height of the logo */
+  }
+  
+  /* Estilos para el formulario */
+  .form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D1D1D1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Estilos para los campos de entrada y los labels */
+  .form input,
+  .form label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el enlace de registro */
+  .form a {
+    text-align: left;
+  }
+  
+  /* Estilos para el botón de registro */
+  .form button {
+    align-self: flex-end;
+  }
+  
+  /* Estilos para el pie del formulario */
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  

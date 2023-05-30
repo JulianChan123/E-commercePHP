@@ -1,1 +1,36 @@
-<p>registro works!</p>
+<div class="container">
+    <h1 class="title">Registration Form</h1>
+    
+    <div class="logo">
+      <!-- Logo HTML goes here -->
+    </div>
+    
+    <form class="form" (submit)="registro()">
+      <label>
+        Username:
+        <input type="text" [(ngModel)]="username" name="username" required>
+      </label><br>
+      
+      <label>
+        Password:
+        <input type="password" [(ngModel)]="password" name="password" required>
+      </label><br>
+      
+      <label>
+        Email:
+        <input type="email" [(ngModel)]="email" name="email" required>
+      </label><br>
+      
+      <label>
+        Name:
+        <input type="text" [(ngModel)]="name" name="name" required>
+      </label><br>
+      
+      <label>
+        Lastname:
+        <input type="text" [(ngModel)]="lastname" name="lastname" required>
+      </label><br>
+      
+      <button type="submit">Register</button>
+    </form>
+  </div>

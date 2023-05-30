@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { ProductModel } from 'src/app/models/product.model';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-products',
@@ -19,9 +20,16 @@ export class ProductsComponent implements OnInit {
     id: 0
   };
 
-  constructor(private proSer: ProductService) {}
+  constructor(
+    private proSer: ProductService,
+    private location: Location
+  ) {}
 
   ngOnInit(): void {
+    this.loadProducts();
+  }
+
+  loadProducts() {
     this.proSer.AllProducts.subscribe(res => {
       this.products = res;
     });
@@ -38,14 +46,18 @@ export class ProductsComponent implements OnInit {
         price: 0,
         id: 0
       };
+      this.refreshPage(); // Refrescar la página después de agregar un producto
     });
   }
 
   deleteProduct(productId: number) {
     this.proSer.delete(productId).subscribe(res => {
       console.log(res);
-      // Realiza cualquier lógica adicional después de eliminar el producto, como actualizar la lista de productos.
+      this.refreshPage(); // Refrescar la página después de eliminar un producto
     });
   }
-  
+
+  refreshPage() {
+    location.reload();
+  }
 }
